@@ -37,6 +37,11 @@ IncludeDesignInRelease=0
 PrefsVaultGUID=
 PrefsRevisionGUID=
 
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
+
 [Document1]
 DocumentPath=pcb\panel.PcbDoc
 AnnotationEnabled=1
@@ -225,12 +230,12 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=Title
-Value=RocketFPGA
+Name=revision_no
+Value=v2
 
 [Parameter2]
-Name=ProjectName
-Value=RocketFPGA
+Name=release_date
+Value=01/06/2020
 
 [Parameter3]
 Name=author_name
@@ -245,6 +250,26 @@ Variant=[No Variations]
 OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Generic_EDE]
 OutputDir=
@@ -1651,40 +1676,55 @@ ComponentUpdate19=1
 ComponentIsDeviceSheet19=0
 
 [NetInfos]
-Net1=NetName=NetC32_1|NetColor=$00007EC5
-Net2=NetName=NetC24_1|NetColor=$00FF99CF
-Net3=NetName=CDC_ADCLRC|NetColor=clYellow
-Net4=NetName=FLASH_MEM_SS|NetColor=$0000BE00
-Net5=NetName=SPI_MOSI|NetColor=$0000BE00
-Net6=NetName=SPI_MISO|NetColor=$0000BE00
-Net7=NetName=NetC26_2|NetColor=$00FF6EFF
-Net8=NetName=CDC_DACDAT|NetColor=clYellow
-Net9=NetName=CDC_BCLK|NetColor=clYellow
-Net10=NetName=CDC_MCLK|NetColor=clYellow
-Net11=NetName=NetR16_3|NetColor=$000083FD
-Net12=NetName=NetC26_1|NetColor=$00FF6EFF
-Net13=NetName=SPI_SCK|NetColor=$0000BE00
-Net14=NetName=2V5|NetColor=$00FFFF6E
-Net15=NetName=NetR15_3|NetColor=$000083FD
-Net16=NetName=NetC25_2|NetColor=$00FF99CF
-Net17=NetName=NetJ2_3|NetColor=$00FF6EFF
-Net18=NetName=NetC29_2|NetColor=$00FF6EFF
-Net19=NetName=NetC31_2|NetColor=$000083FD
-Net20=NetName=NetC29_1|NetColor=$00FF6EFF
-Net21=NetName=NetJ3_2|NetColor=$007F0311
-Net22=NetName=NetC24_2|NetColor=$00FF99CF
-Net23=NetName=3V3|NetColor=$00FFFF6E
-Net24=NetName=NetC32_2|NetColor=$00007EC5
-Net25=NetName=CDC_ADCDAT|NetColor=clYellow
-Net26=NetName=NetC25_1|NetColor=$00FF99CF
-Net27=NetName=1V2|NetColor=$00FFFF6E
-Net28=NetName=NetJ3_3|NetColor=$007F0311
-Net29=NetName=NetC28_1|NetColor=$000083FD
-Net30=NetName=MICIN|NetColor=$00007EC5
-Net31=NetName=CDC_DACLRC|NetColor=clYellow
-Net32=NetName=NetC28_2|NetColor=$000083FD
-Net33=NetName=NetC31_1|NetColor=$000083FD
-Net34=NetName=NetJ2_2|NetColor=$00FF6EFF
+Net1=NetName=AUDIO_IN_L|NetColor=$00FF6EFF
+Net2=NetName=SPI_MOSI|NetColor=$0000BE00
+Net3=NetName=SPI_MISO|NetColor=$0000BE00
+Net4=NetName=NetC26_2|NetColor=$00FF6EFF
+Net5=NetName=CDC_DACDAT|NetColor=clYellow
+Net6=NetName=CDC_MCLK|NetColor=clYellow
+Net7=NetName=MEM_DI_IO0|NetColor=$0000BE00
+Net8=NetName=AUDIO_OUT_R|NetColor=$00660066
+Net9=NetName=NetC26_1|NetColor=$00FF6EFF
+Net10=NetName=CODEC_CLK|NetColor=$0000BE00
+Net11=NetName=2V5|NetColor=$00FFFF6E
+Net12=NetName=NetC25_2|NetColor=$00FF99CF
+Net13=NetName=NetJ2_3|NetColor=$00FF6EFF
+Net14=NetName=NetC29_2|NetColor=$00FF6EFF
+Net15=NetName=NetC31_2|NetColor=$000083FD
+Net16=NetName=NetC29_1|NetColor=$00FF6EFF
+Net17=NetName=NetJ3_2|NetColor=$007F0311
+Net18=NetName=CODEC_CS|NetColor=$0000BE00
+Net19=NetName=NetC24_2|NetColor=$00FF99CF
+Net20=NetName=MEM_D0_IO1|NetColor=$0000BE00
+Net21=NetName=NetC32_2|NetColor=$00007EC5
+Net22=NetName=5V|NetColor=$00FFFF6E
+Net23=NetName=AUDIO_OUT_L|NetColor=$00660066
+Net24=NetName=MEM_CLK|NetColor=$0000BE00
+Net25=NetName=MEM_WP_IO2|NetColor=$0000BE00
+Net26=NetName=NetC28_2|NetColor=$000083FD
+Net27=NetName=NetC31_1|NetColor=$000083FD
+Net28=NetName=NetJ2_2|NetColor=$00FF6EFF
+Net29=NetName=NetC24_1|NetColor=$00FF99CF
+Net30=NetName=MEM_CS|NetColor=$0000BE00
+Net31=NetName=CDC_ADCLRC|NetColor=clYellow
+Net32=NetName=FLASH_MEM_SS|NetColor=$0000BE00
+Net33=NetName=NetR16_3|NetColor=$000083FD
+Net34=NetName=CDC_BCLK|NetColor=clYellow
+Net35=NetName=SPI_SCK|NetColor=$0000BE00
+Net36=NetName=NetR15_3|NetColor=$000083FD
+Net37=NetName=CODEC_DI|NetColor=$0000BE00
+Net38=NetName=HOLD|NetColor=$0000BE00
+Net39=NetName=MEM_HOLD_IO3|NetColor=$0000BE00
+Net40=NetName=3V3|NetColor=$00FFFF6E
+Net41=NetName=CDC_ADCDAT|NetColor=clYellow
+Net42=NetName=NetC25_1|NetColor=$00FF99CF
+Net43=NetName=1V2|NetColor=$00FFFF6E
+Net44=NetName=NetJ3_3|NetColor=$007F0311
+Net45=NetName=NetC28_1|NetColor=$000083FD
+Net46=NetName=MICIN|NetColor=$00007EC5
+Net47=NetName=AUDIO_IN_R|NetColor=$00FF6EFF
+Net48=NetName=CDC_DACLRC|NetColor=clYellow
+Net49=NetName=NetC32_1|NetColor=$00007EC5
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
