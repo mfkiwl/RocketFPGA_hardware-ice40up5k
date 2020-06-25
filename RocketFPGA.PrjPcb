@@ -176,7 +176,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DPNPNUWT
 
 [Document9]
 DocumentPath=lib\RocketFPGA.SCHLIB
@@ -229,17 +229,21 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for RocketFPGA\Design Rule Check - RocketFPGA.html
+DItemRevisionGUID=
+
 [Parameter1]
-Name=revision_no
-Value=v2
+Name=author_name
+Value=Luis Sánchez & Pablo Garrido
 
 [Parameter2]
 Name=release_date
 Value=01/06/2020
 
 [Parameter3]
-Name=author_name
-Value=Luis Sánchez & Pablo Garrido
+Name=revision_no
+Value=v2
 
 [Configuration1]
 Name=Sources
