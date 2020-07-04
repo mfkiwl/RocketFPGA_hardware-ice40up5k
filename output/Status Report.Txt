@@ -1,0 +1,15 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 20:25:49 On 04/07/2020
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [RocketFPGA.PrjPcb]
+   Generated File[Bill of Materials-RocketFPGA.xls]
+   Generated File[Bill of Materials-RocketFPGA.xls]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 20:26:45 On 04/07/2020
